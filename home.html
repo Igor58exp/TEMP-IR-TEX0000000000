@@ -1,0 +1,35 @@
+<div class='home'>
+    <div class='slider'>
+        <div class='includeContainer' ng-include="slide">
+        </div>
+        <div class='slideIndicatorBar' id='{{includes[currentSlide]}}'>
+            <div class='indicator'id='slide1' ng-click='slide="ad1.html";currentSlide="0"; slideAnimation()'></div>
+            <div class='indicator'id='slide2' ng-click='slide="ad2.html";currentSlide="1"; slideAnimation()'></div>
+            <div class='indicator'id='slide3' ng-click='slide="ad3.html";currentSlide="2"; slideAnimation()'></div>
+            <div class='indicator'id='slide4' ng-click='slide="ad4.html";currentSlide="3"; slideAnimation()'></div>
+        </div>
+    </div>
+    <h1>Електромонтажні роботи та послуги від компанії "ІР-ТЕХ"</h1>
+	<p class="info">ТзОВ "ІР-ТЕХ" є ліцензованою компанією, яка надає широкий спектр послуг по улаштуванню, ремонту, модернізації систем електропостачання житлових будинків, офісів та підприємств. Виконує роботи по монтажу та налагодженню електроустановок, прокладанню та ремонту кабельних та повітряних ліній до 10кВ. Проведення робіт можливо як на основі прямих договорів із Замовниками, так і на основі Генпідряду.
+	</p>
+	<h3 style='text-align:center'>Ми гарантуємо:</h3>
+    <div class="colOffersWrapper">
+        <div class="colOffer">
+            <img src='/png/offers/quality.svg'>
+            <h2>Якість</h2><br>
+            Всі роботи виконуються висококваліфікованим<br> персоналом
+        </div>
+        <div class="colOffer">
+            <img src='/png/offers/price.svg'>
+            <h2>Оптимальні&nbsp;ціни</h2><br>
+            Вартість робіт розраховуєтся індивідуально в залежності від особливостей об&prime;єкта
+        </div>
+        <div class="colOffer">
+            <img src='/png/offers/terms.svg'>
+            <h2>Оперативність</h2><br>
+            Найкоротші терміни виконання електромонтажних робіт будь-якої складності
+        </div>	
+    </div>
+    <p class="info">Професійно виконані роботи - це запорука безпеки Вашого дому, офісу, складу чи магазину. Якісне обладнання та монтаж - забезпечить довговічну, безпечну та комфортну експлуатацію Ваших електроприладів. Довіряйте Вашу електрику професіоналам!</p>
+<footer ng-include='"footer.html"'>
+</footer>

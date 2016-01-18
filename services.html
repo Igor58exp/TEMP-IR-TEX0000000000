@@ -1,0 +1,12 @@
+<div class='services'>
+	<h3 class="titleServices">На виконані роботи надається гарантія і проводиться як гарантійне так і післягарантійне обслуговування</h3>
+	<div class="servicesButtonsBar" id="{{servicesInclude.sActive}}">
+		<div class='servicesButton' ng-click='servicesInclude.templatePage = "electro.html"; servicesInclude.sActive = "electro"'id="elBtn"> Електромонтажні<br> роботи</div>
+		<div class='servicesButton' ng-click='servicesInclude.templatePage = "doc.html" ;    servicesInclude.sActive = "doc"'    id="docBtn">Виготовлення<br> документації</div>
+		<div class='servicesButton' ng-click='servicesInclude.templatePage = "dig.html";     servicesInclude.sActive = "dig"'    id="digBtn">Кабельні<br> лінії</div>
+		<div class='servicesButton' ng-click='servicesInclude.templatePage = "solar.html";   servicesInclude.sActive = "solar"'  id="sBtn">	 Сонячні<br> панелі</div>
+	</div>
+	<div class="servicesIncludeContainer" ng-include="servicesInclude.templatePage"></div>
+</div>
+<footer ng-include='"footer.html"'>
+</footer>
